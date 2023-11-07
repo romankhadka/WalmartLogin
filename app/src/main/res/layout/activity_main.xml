@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#FFFFFF"
+        android:paddingTop="80dp">
+
+    <!-- Walmart Logo -->
+    <ImageView
+            android:id="@+id/walmartLogo"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="32dp"/>
+
+    <!-- Sign in text -->
+    <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/walmartLogo"
+            android:layout_centerHorizontal="true"
+            android:text="Sign in to your account"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"/>
+
+    <!-- Card View Section -->
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signInText"
+            android:layout_margin="16dp"
+            android:cardCornerRadius="8dp"
+            android:cardElevation="4dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <!-- Email Address Text -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email address (required)"
+                    android:textSize="14sp"/>
+
+            <!-- Email Address EditText -->
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:hint="Enter your email address"/>
+
+            <!-- Password Text -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password (required)"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"/>
+
+            <!-- Password EditText -->
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your password"
+                    android:textSize="14sp"
+                    android:inputType="textPassword"/>
+
+            <!-- Forgot Password Text (clickable) -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:layout_gravity="end"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:textColor="@color/black"/>
+
+            <!-- Sign In Button -->
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@color/colorPrimary"/>
+
+            <!-- Don't have an account Text -->
+            <TextView
+                    android:id="@+id/dontHaveAccountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"/>
+
+            <!-- Create an Account Button -->
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create an account"
+                    android:textColor="@color/colorPrimary"
+                    android:background=""/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
