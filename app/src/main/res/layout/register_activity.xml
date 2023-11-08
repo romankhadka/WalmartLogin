@@ -6,7 +6,6 @@
         android:background="#FFFFFF"
         android:paddingTop="80dp">
 
-    <!-- Walmart Logo -->
     <ImageView
             android:id="@+id/walmartLogo"
             android:layout_width="200dp"
@@ -15,18 +14,16 @@
             android:src="@drawable/logo"
             android:layout_marginTop="32dp"/>
 
-    <!-- Sign in text -->
     <TextView
             android:id="@+id/signInText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/walmartLogo"
             android:layout_centerHorizontal="true"
-            android:text="Sign in to your account"
+            android:text="Create your account"
             android:textSize="30sp"
             android:layout_marginTop="50dp"/>
 
-    <!-- Card View Section -->
     <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,77 +38,74 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-            <!-- Email Address Text -->
             <TextView
                     android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
-                    android:text="Email address (required)"
+                    android:text="* required field"
+                    android:textColor="@color/black"
                     android:textSize="14sp"/>
 
-            <!-- Email Address EditText -->
-            <EditText
-                    android:id="@+id/emailEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:hint="Enter your email address"/>
-
-            <!-- Password Text -->
             <TextView
                     android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
-                    android:text="Password (required)"
-                    android:layout_marginTop="20dp"
+                    android:text="First Name *"
                     android:textSize="14sp"/>
 
-            <!-- Password EditText -->
             <EditText
-                    android:id="@+id/passwordEditText"
+                    android:id="@+id/firstNameText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter your password"
-                    android:textSize="14sp"
-                    android:inputType="textPassword"/>
-
-            <!-- Forgot Password Text (clickable) -->
+                    android:textSize="14sp" />
             <TextView
-                    android:id="@+id/forgotPasswordBtn"
                     android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
-                    android:text="Forgot password?"
-                    android:layout_gravity="end"
-                    android:autoLink="all"
-                    android:clickable="true"
-                    android:textColor="@color/black"/>
+                    android:text="Last Name *"
+                    android:textSize="14sp"/>
 
-            <!-- Sign In Button -->
+            <EditText
+                    android:id="@+id/lastNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address *"
+                    android:textSize="14sp"/>
+
+            <EditText
+                    android:id="@+id/emailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password *"
+                    android:textSize="14sp"/>
+
+            <EditText
+                    android:id="@+id/passwordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
             <Button
-                    android:id="@+id/signInButton"
+                    android:id="@+id/registerButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sign In"
+                    android:text="Create Account"
                     android:layout_marginTop="50dp"
                     android:textColor="#FFFFFF"
                     android:background="@color/colorPrimary"/>
 
-            <!-- Don't have an account Text -->
-            <TextView
-                    android:id="@+id/dontHaveAccountText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Don't have an account?"
-                    android:textSize="14sp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="16dp"/>
-
-            <!-- Create an Account Button -->
-            <Button
-                    android:id="@+id/createAccountBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Create an account"
-                    android:textColor="@color/colorPrimary"
-                    android:background="@color/white"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
